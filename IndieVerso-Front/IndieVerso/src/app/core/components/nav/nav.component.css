@@ -1,0 +1,85 @@
+
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Garante que os elementos fiquem bem divididos nas extremidades*/
+}
+
+.flex img{
+ width: 150px;
+ height: 50%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ transition: 1s;
+}
+
+.btn-contato button{
+  border-radius: 3px;
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: rgb(107, 6, 107);
+  color: #fff;
+  cursor: pointer;
+  transition:  .2;
+}
+
+.btn-contato button:hover{
+  background-color: rgb(64, 7, 64);
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+header i{
+  font-size: 30px;
+  color: white;
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a{
+  font-size: 1.2em;
+  color: #ae95b8;
+  text-decoration: none;
+  font-weight: 1000;
+}
+
+header{
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top:0;
+  left:0;
+  transition: .7s;
+}
+
+header.rolagem{
+  background-color: #302f2f;
+  padding: 1px 4%;
+  box-shadow: 0px 1px 10px #76428a;
+}
+
+header.rolagem .flex img{
+  width: 100px;
+}
+
+header.rolagem ul li a, header.rolagem i{
+  color:#dfa4f6;
+}
+
+
+
+
+

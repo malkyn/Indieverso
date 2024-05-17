@@ -1,0 +1,26 @@
+
+html{
+  height: 400vh;
+}
+.banner{
+  height: 100vh;
+  background-image:url("../../../assets/images/kazewalpapper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1{
+  font-size: 5em;
+  color: rgb(255, 255, 255);
+}
+
+.banner h1 a{
+  text-decoration: none;
+  color: #4b175f;
+}
+

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './core/components/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
+import { UndertaleComponent } from './pages/home/Jogos/Undertale/undertale/undertale.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    UndertaleComponent
   ],
   imports: [
     BrowserModule,

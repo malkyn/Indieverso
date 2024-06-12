@@ -128,9 +128,12 @@ html{
 } */
 
 .page-content{
-  background-color: #484649;
   position: relative;
   top: 18%;
+}
+
+.vspotlight{
+  background-color: #484649;
 }
 
 .hspotlight{
@@ -167,9 +170,6 @@ section.vspotlight article, section.hspotlight article{
   overflow: hidden;
 }
 
-section.vspotlight article.p1 a.thumb, section.hspotlight article.p1 a.thumb{
-  margin-left: 0px;
-}
 
 article a.thumb{
   box-sizing: border-box;
@@ -177,7 +177,6 @@ article a.thumb{
   position: relative;
   overflow: hidden;
   display: block;
-
 }
 
 section a{
@@ -186,13 +185,14 @@ section a{
 }
 
 section.vspotlight article img, section.hspotlight article img{
-  height: 475px;
-  max-width: 100%;
-  transition: .5s ease-out;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-
+    height: 475px;
+    width: 100%;
+    min-width: 100%;
+    transition: transform .5s ease-out;
+    border-radius: 4px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .titulo-section{
@@ -225,6 +225,10 @@ section.vspotlight .caption, section.hspotlight .caption{
 
 }
 
+section.vspotlight img.thumb:hover{
+  transform: scale(1.04);
+  transition: transform .75s ease-in-out;
+}
 
 section.vspotlight .caption:hover, section.hspotlight .caption:hover{
   height: 100px;
